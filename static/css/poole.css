@@ -85,19 +85,19 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 h4, h5, h6 {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: .75rem;
 }
 
 /* Body text */
@@ -129,8 +129,7 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  border-top: 1px dashed #eee;
 }
 
 abbr {
@@ -232,8 +231,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 200;
 }
 
 
@@ -312,14 +311,20 @@ tbody tr:nth-child(odd) th {
 .post-title a {
   color: #303030;
 }
-.page-title,
+.post-title a:hover {
+  text-decoration: none;
+  color: #888;
+}
 .post-title {
   margin-top: 0;
+  padding-left: 3px;
+  border-bottom: 5px solid #eee;
 }
 
 /* Meta data line below post title */
 .post-date {
   display: block;
+  padding-left: 3px;
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;

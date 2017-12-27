@@ -32,19 +32,10 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
 }
-@media (min-width: 48em) {
-  html {
-    font-size: 16px;
-  }
-}
-@media (min-width: 58em) {
-  html {
-    font-size: 20px;
-  }
-}
-
 
 /*
  * Sidebar
@@ -65,7 +56,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 17rem;
     text-align: left;
   }
 }
@@ -79,7 +70,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3.25rem;
 }
 
@@ -177,74 +168,104 @@ a.sidebar-nav-item:focus {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
+/* my theme */
+.theme-base-1f .sidebar {
+  background-color: #374F65;
 }
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
+/* TODO update for 1f - link color doesn't work */
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
+  color: #374F65;
+}
+
+.logo {
+	text-decoration: none;
+    border-bottom: 10px solid rgba(255,255,255,.2);
+}
+
+a.logo:hover {
+	text-decoration: none;
+	padding-top: 15px;
+    border-bottom: 10px solid rgba(255,255,255,.3);
+}
+
+.logo_one {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: rgba(255,255,255,.5);
+}
+
+.logo_two {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 35px;
+  color: rgba(255,255,255,.5);
+}
+
+.copyright {
+	font-size: 75%;
+}
+
+.terms-list .tags-cloud {
+  margin: 2em auto; }
+  .terms-list .tags-cloud a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 5px; }
+    .terms-list .tags-cloud a.tag-s {
+      font-size: 1rem;
+      line-height: 2rem;
+      padding: 0 0.5rem;
+      opacity: 0.8; }
+    .terms-list .tags-cloud a.tag-m {
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+      padding: 0 0.75rem;
+      opacity: 0.9; }
+    .terms-list .tags-cloud a.tag-l {
+      font-size: 1.5rem;
+      line-height: 3rem;
+      padding: 0 1rem; }
+    .terms-list .tags-cloud a.tag-xl {
+      font-size: 1.75rem;
+      line-height: 3.25rem;
+      padding: 0 1.25rem; }
+    .terms-list .tags-cloud a.tag-xxl {
+      font-size: 2rem;
+      line-height: 3.5rem;
+      padding: 0 1.5rem; }
+    .terms-list .tags-cloud a:hover {
+      color: white;
+      background-color: #374F65;
+      opacity: 0.8; 
+	}
+
+#tags {
+	background: #eee; 
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding:3px;
+	font-size: 80%;
+}
+
+.tag {
+    border-radius: 3px;
+	padding: 0px 4px 1px 4px;
+	color: white;
+    background-color: #374F65;
+    opacity: 0.5; 
+}
+
+#title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#description{
+  font-size: 1em;
+  font-weight: 100;
+  text-transform: lowercase;
 }
