@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 16px;
 }
@@ -70,7 +70,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 3.25rem;
 }
 
@@ -190,21 +190,21 @@ a.logo:hover {
 }
 
 .logo_one {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 2.1em;
   color: rgba(255,255,255,.5);
 }
 
 .logo_two {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 100;
-  font-size: 35px;
+  font-size: 2.1em;
   color: rgba(255,255,255,.5);
 }
 
 .copyright {
-	font-size: 75%;
+	font-size: .75em;
 }
 
 .terms-list .tags-cloud {
@@ -248,7 +248,7 @@ a.logo:hover {
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	padding:3px;
-	font-size: 80%;
+	font-size: .8em;
 }
 
 .tag {
@@ -264,8 +264,23 @@ a.logo:hover {
   font-weight: bold;
 }
 
-#description{
+#description {
   font-size: 1em;
   font-weight: 100;
   text-transform: lowercase;
+}
+.footnote-ref {
+	font-size: .7em;
+	font-weight: 300;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.footnote-ref:before {
+	content: "[";
+}
+.footnote-ref:after {
+	content: "]";
+}
+.footnotes {
+	font-size: .75em;
 }
